@@ -1,0 +1,10 @@
+{
+  "name": "lol-wrapper_api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "exit 0",
+    "test": "exit 0"
+  }
+}
