@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: lts/*
       - run: yarn install
-      - run: yarn lint && yarn test:ci
+      - run: yarn pipeline
