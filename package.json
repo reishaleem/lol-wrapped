@@ -14,9 +14,10 @@
     "prepare": "husky install",
     "build:ci": "lerna run build --stream",
     "test:ci": "lerna run test --stream",
-    "format": "prettier --write '**/*.{js,ts}' '**/*.{html,md,json}' --loglevel='warn'",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx}' '**/*.{html,md,json}' --loglevel='warn'",
     "lint": "eslint '**/*.{js,ts}' --max-warnings 0",
-    "pipeline": "yarn lint && yarn build:ci && yarn test:ci"
+    "pipeline": "yarn lint && yarn build:ci && yarn test:ci",
+    "serve": "lerna run serve --stream"
   },
   "dependencies": {
     "lerna": "^6.6.1"
@@ -34,7 +35,7 @@
     "typescript": "^5.0.4"
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],

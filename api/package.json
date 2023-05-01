@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "exit 0",
-    "test": "exit 0"
+    "test": "exit 0",
+    "serve": "exit 0"
   }
 }
