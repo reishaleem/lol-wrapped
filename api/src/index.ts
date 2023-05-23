@@ -1,14 +1,12 @@
 import { APIGatewayEvent, Context } from 'aws-lambda';
-import createApi, { Request, Response } from 'lambda-api';
+import createApi from 'lambda-api';
 
-import { handler } from './handler';
+import { championMasteryApi } from './champion-mastery/controller';
 
 const api = createApi();
 
-api.get('/', async (req: Request, res: Response) => {
-  return { status: handler() };
-});
+api.register(championMasteryApi, { prefix: 'champion-mastery' });
 
-export const run = async (event: APIGatewayEvent, context: Context) => {
-  return await api.run(event, context);
+export const handler = async (event: APIGatewayEvent, context: Context) => {
+  return api.run(event, context);
 };

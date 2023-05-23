@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "run-local": "ts-node ./src/localServer.ts",
+    "serve": "ts-node ./scripts/server.ts",
     "test": "exit 0"
   },
   "dependencies": {
