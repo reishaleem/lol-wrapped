@@ -1,4 +1,4 @@
-import { APIGatewayEvent, Context } from 'aws-lambda';
+import type { APIGatewayEvent, Context } from 'aws-lambda';
 import createApi from 'lambda-api';
 
 import { championMasteryApi } from './champion-mastery/controller';

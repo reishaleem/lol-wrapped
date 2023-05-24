@@ -1,3 +1,3 @@
-export const getChampionMastery = () => {
+export function getChampionMastery() {
   return 'Hello';
-};
+}
