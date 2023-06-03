@@ -1,3 +1,3 @@
 export function getChampionMastery() {
-  return 'Hello';
+  return { hello: 'world' };
 }
