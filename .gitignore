@@ -130,3 +130,10 @@ dist
 .pnp.*
 
 */dist
+
+.pnp*
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
